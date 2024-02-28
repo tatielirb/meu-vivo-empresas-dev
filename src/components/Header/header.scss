@@ -9,32 +9,8 @@
 
   .button-menu {
     margin: 16px 20px 16px 16px;
+
     &.navbar-toggler {
-      &.collapsed {
-        .hamburguer {
-          .bars {
-            &.bars-one,
-            &.bars-two,
-            &.bars-three {
-              transform: none;
-            }
-
-            &.bars-one {
-              top: 2px;
-            }
-
-            &.bars-two {
-              top: 10px;
-              opacity: 1;
-            }
-
-            &.bars-three {
-              top: 18px;
-            }
-          }
-        }
-      }
-
       .hamburguer {
         position: relative;
         width: 32px;
@@ -42,10 +18,24 @@
         right: 0px;
         top: 0;
         display: inline-block;
-        content: "";
-        zoom: 1;
         transition: 0.4s;
         transform: rotate(180deg);
+
+        &.show {
+          .bars-one {
+            transform: rotate(45deg) translate3d(7px, 7px, 0);
+            top: 0px !important;
+          }
+
+          .bars-two {
+            opacity: 0 !important;
+          }
+
+          .bars-three {
+            transform: rotate(-45deg) translate3d(-7px, 7px, 0);
+            top: 0px !important;
+          }
+        }
 
         .bars {
           position: absolute;
@@ -53,20 +43,20 @@
           height: 2px;
           background: $primary-color;
           transition: 0.2s;
-          outline: none;
           left: 0;
           top: 0;
 
           &.bars-one {
-            transform: rotate(45deg) translate3d(7px, 7px, 0);
+            top: 2px;
           }
 
           &.bars-two {
-            opacity: 0;
+            top: 10px;
+            opacity: 1;
           }
 
           &.bars-three {
-            transform: rotate(-45deg) translate3d(-7px, 7px, 0);
+            top: 18px;
           }
         }
       }
