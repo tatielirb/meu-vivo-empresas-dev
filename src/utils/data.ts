@@ -1,3 +1,7 @@
+import simCardIcon from '../assets/img/simCard.svg';
+import esimIcon from '../assets/img/esim.svg';
+import fiveGIcon from '../assets/img/5g.svg';
+
 export const cardItens = [
   {
     title: "200 Mega",
@@ -12,5 +16,22 @@ export const cardItens = [
     title: "600 Mega",
     description: "+Wi-fi e Modem grátis",
     text: "OFERTA ESPECIAL",
+  },
+];
+
+
+
+export const carouselItens = [
+  {
+    title: "simCard",
+    iconItem: simCardIcon,
+  },
+  {
+    title: "Esim",
+    iconItem: esimIcon,
+  },
+  {
+    title: "Tecnologia",
+    iconItem: fiveGIcon,
   },
 ];

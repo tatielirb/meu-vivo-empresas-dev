@@ -2,9 +2,10 @@ import React from "react";
 import "App.scss";
 import Header from "components/Header/Index";
 import Card from "components/Card/Index";
-import { cardItens } from "utils/data";
+import Carousel from "components/Carousel/Index";
+import { cardItens, carouselItens } from "utils/data";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Header />
@@ -13,6 +14,8 @@ function App() {
         <div className="row ">
           <div className="col-12">
             <p className="h4">Tecnologias</p>
+
+            <Carousel items={carouselItens} />
           </div>
           <div className="col-12">
             <p className="h4">Descobrir</p>
@@ -28,5 +31,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
