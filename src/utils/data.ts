@@ -1,6 +1,6 @@
-import simCardIcon from '../assets/img/simCard.svg';
-import esimIcon from '../assets/img/esim.svg';
-import fiveGIcon from '../assets/img/5g.svg';
+import simCardIcon from "../assets/img/simCard.svg";
+import esimIcon from "../assets/img/esim.svg";
+import fiveGIcon from "../assets/img/5g.svg";
 
 export const cardItens = [
   {
@@ -19,8 +19,6 @@ export const cardItens = [
   },
 ];
 
-
-
 export const carouselItens = [
   {
     title: "simCard",
@@ -33,5 +31,16 @@ export const carouselItens = [
   {
     title: "Tecnologia",
     iconItem: fiveGIcon,
+  },
+];
+
+export const navVivo = [
+  {
+    title: "Meu Vivo empresas",
+    link: "/",
+  },
+  {
+    title: "Meu Vivo",
+    link: "/",
   },
 ];

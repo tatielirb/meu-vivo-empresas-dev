@@ -3,7 +3,7 @@ import "App.scss";
 import Header from "components/Header/Index";
 import Card from "components/Card/Index";
 import Carousel from "components/Carousel/Index";
-import { cardItens, carouselItens } from "utils/data";
+import { cardItens, carouselItens, navVivo } from "utils/data";
 
 export default function App() {
   return (

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./carousel.scss";
 import { CarouselProps } from "types/component/Carousel";
 
