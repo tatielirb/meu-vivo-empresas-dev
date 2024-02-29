@@ -6,7 +6,7 @@
 
 ## Technologies
 
-As tecnologias utilizadas neste projeto foram:
+The technologies used in this project were:
 
 - [Node.js](https://nodejs.org/)
 - [React](https://react.dev/)
