@@ -60,6 +60,22 @@
           }
         }
       }
+
+      &.show {
+        .bars-one {
+          transform: rotate(45deg) translate3d(7px, 7px, 0);
+          top: 0px !important;
+        }
+
+        .bars-two {
+          opacity: 0 !important;
+        }
+
+        .bars-three {
+          transform: rotate(-45deg) translate3d(-7px, 7px, 0);
+          top: 0px !important;
+        }
+      }
     }
   }
 }
