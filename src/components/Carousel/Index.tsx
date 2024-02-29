@@ -1,27 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import "./carousel.scss";
 import { ItemsCarousel } from "types/component/Carousel";
 import Item from "./Item";
+import { useCarousel } from "hooks/useCarousel";
 
 export default function Carousel({ items, onCarouselChange }: ItemsCarousel) {
-  const [currentItem, setCurrentItem] = useState(0);
-
-  const itemClick = (index: number) => {
-    setCurrentItem(index);
-    if (onCarouselChange) {
-      onCarouselChange(index);
-    }
-  };
-
-  const buttonNext = () => {
-    const newIndex = (currentItem + 1) % items.length;
-    itemClick(newIndex);
-  };
-
-  const buttonPrev = () => {
-    const newIndex = (currentItem - 1 + items.length) % items.length;
-    itemClick(newIndex);
-  };
+  const { currentItem, itemClick, buttonNext, buttonPrev } = useCarousel({
+    items,
+    onCarouselChange,
+  });
   return (
     <div className="carousel-container">
       <div className="carousel">
