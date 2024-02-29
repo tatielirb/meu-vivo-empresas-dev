@@ -1,3 +1,23 @@
+# Test Meu Vivo Empresas
+## Requirement
+
+- [Node.js](https://nodejs.org/)
+- [NPM](https://www.npmjs.com/)
+
+## Technologies
+
+As tecnologias utilizadas neste projeto foram:
+
+- [Node.js](https://nodejs.org/)
+- [React](https://react.dev/)
+- [Sass](http://lesscss.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Jest](https://jestjs.io/)
+- [Testing Library](https://testing-library.com/)
+
+[Figma](https://www.figma.com/file/Wz1Xg2Pz65JwWipklktiZZ/Teste-meuvivoempresas-dev?type=design&node-id=0%3A1&mode=design&t=AZEmsK1GqhyCnhOm-1)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
