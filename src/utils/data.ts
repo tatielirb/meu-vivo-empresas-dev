@@ -2,7 +2,41 @@ import simCardIcon from "../assets/img/simCard.svg";
 import esimIcon from "../assets/img/esim.svg";
 import fiveGIcon from "../assets/img/5g.svg";
 
-export const cardItens = [
+export const fiveGcardItens = [
+  {
+    title: "9GB",
+    description: "8GB + 3GB bônus Fatura Digital",
+  },
+  {
+    title: "19GB",
+    description: "10GB + 6GB bônus Fatura Digital",
+    text: "O MELHOR CUSTO BENEFÍCIO",
+  },
+  {
+    title: "30GB",
+    description: "16GB + 8GB bônus Fatura Digital",
+    text: "Sem fidelidade",
+  },
+];
+
+export const esimcardItens = [
+  {
+    title: "10GB",
+    description: "8GB + 3GB bônus Fatura Digital",
+  },
+  {
+    title: "30GB",
+    description: "10GB + 6GB bônus Fatura Digital",
+    text: "O MELHOR CUSTO BENEFÍCIO",
+  },
+  {
+    title: "40GB",
+    description: "16GB + 8GB bônus Fatura Digital",
+    text: "Sem fidelidade",
+  },
+];
+
+export const simcardItens = [
   {
     title: "200 Mega",
     description: "+Wi-fi e Modem grátis",

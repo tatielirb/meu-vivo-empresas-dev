@@ -1,18 +1,26 @@
 import React, { useState } from "react";
 import "./carousel.scss";
 import { ItemsCarousel } from "types/component/Carousel";
+import Item from "./Item";
 
-import Iten from "./Iten";
-
-export default function Carousel({ items }: ItemsCarousel) {
+export default function Carousel({ items, onCarouselChange }: ItemsCarousel) {
   const [currentItem, setCurrentItem] = useState(0);
 
-  const handleNext = () => {
-    setCurrentItem((prevItem) => (prevItem + 1) % 3);
+  const itemClick = (index: number) => {
+    setCurrentItem(index);
+    if (onCarouselChange) {
+      onCarouselChange(index);
+    }
   };
 
-  const handlePrev = () => {
-    setCurrentItem((prevItem) => (prevItem - 1 + 3) % 3);
+  const buttonNext = () => {
+    const newIndex = (currentItem + 1) % items.length;
+    itemClick(newIndex);
+  };
+
+  const buttonPrev = () => {
+    const newIndex = (currentItem - 1 + items.length) % items.length;
+    itemClick(newIndex);
   };
   return (
     <div className="carousel-container">
@@ -23,16 +31,16 @@ export default function Carousel({ items }: ItemsCarousel) {
             className={`carousel-items ${
               index === currentItem ? "active" : ""
             }`}
-            onClick={() => setCurrentItem(index)}
+            onClick={() => itemClick(index)}
           >
-            <Iten key={index} {...item} />
+            <Item key={index} {...item} />
           </div>
         ))}
       </div>
-      <button onClick={handlePrev} className="btn chevron-left">
+      <button onClick={buttonPrev} className="btn chevron-left">
         <i className="bi bi-chevron-left"></i>
       </button>
-      <button onClick={handleNext} className="btn chevron-right ">
+      <button onClick={buttonNext} className="btn chevron-right ">
         <i className="bi bi-chevron-right"></i>
       </button>
     </div>
