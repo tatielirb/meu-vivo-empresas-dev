@@ -3,10 +3,10 @@ import wifi from "../../assets/img/wifi.svg";
 import "./card.scss";
 import { CardProps } from "types/component/Card";
 
-export default function Card({ description, title, text }: CardProps) {
+export default function Card({ description, title, badgeText }: CardProps) {
   return (
     <div className="card shadow-lg">
-      {text !== " " && <span className="badge">{text}</span>}
+      {badgeText !== " " && <span className="badge">{badgeText}</span>}
       <div className="card-body">
         <div className="card-header">
           <img src={wifi} alt="sinal internet icon" className="col-4" />

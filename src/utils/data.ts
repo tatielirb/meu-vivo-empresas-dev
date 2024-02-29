@@ -6,7 +6,7 @@ export const fiveGcardItens = [
   {
     title: "9GB",
     description: "8GB + 3GB bônus Fatura Digital",
-    text: "O MELHOR CUSTO BENEFÍCIO"
+    badgeText: "O MELHOR CUSTO BENEFÍCIO"
   },
   {
     title: "19GB",
@@ -15,7 +15,7 @@ export const fiveGcardItens = [
   {
     title: "30GB",
     description: "16GB + 8GB bônus  Digital",
-    text: "Sem fidelidade",
+    badgeText: "Sem fidelidade",
   },
 ];
 
@@ -27,12 +27,12 @@ export const esimcardItens = [
   {
     title: "30GB",
     description: "10GB + 6GB bônus  Digital",
-    text: "O MELHOR CUSTO BENEFÍCIO",
+    badgeText: "O MELHOR CUSTO BENEFÍCIO",
   },
   {
     title: "40GB",
     description: "16GB + 8GB bônus Digital",
-    text: "Sem fidelidade",
+    badgeText: "Sem fidelidade",
   },
 ];
 
@@ -44,12 +44,12 @@ export const simcardItens = [
   {
     title: "300 Mega",
     description: "+Wi-fi e Modem grátis",
-    text: "O MELHOR CUSTO BENEFÍCIO",
+    badgeText: "O MELHOR CUSTO BENEFÍCIO",
   },
   {
     title: "600 Mega",
     description: "+Wi-fi e Modem grátis",
-    text: "OFERTA ESPECIAL",
+    badgeText: "OFERTA ESPECIAL",
   },
 ];
 

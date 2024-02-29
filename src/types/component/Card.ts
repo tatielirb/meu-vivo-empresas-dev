@@ -1,7 +1,7 @@
 export interface CardProps {
   title: string;
   description: string;
-  text?: string;
+  badgeText?: string;
 }
 
 export interface ItemsCard {
