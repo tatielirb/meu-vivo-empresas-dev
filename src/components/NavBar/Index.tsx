@@ -2,15 +2,14 @@ import React from "react";
 import Nav from "components/Nav/Index";
 import { navVivo } from "utils/data";
 import "./navBar.scss";
+import { NavBarProps } from "types/component/NavBar";
 
-interface NavBarProps {
-  isOpen: boolean;
-}
 export default function NavBar({ isOpen }: NavBarProps) {
   return (
     <div
+      data-testid="offcanvas-teste"
       className={`offcanvas offcanvas-start ${isOpen ? "show" : ""}`}
-      id="offcanvasExample"
+      id="offcanvas"
       aria-labelledby="navBar Section"
     >
       <div className="offcanvas-body">
