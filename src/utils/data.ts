@@ -66,6 +66,7 @@ export const carouselItems = [
     title: "Tecnologia",
     iconItem: fiveGIcon,
   },
+  
 ];
 
 export const navVivo = [
