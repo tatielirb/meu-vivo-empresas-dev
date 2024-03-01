@@ -2,6 +2,8 @@
 .header {
   background-color: $additional-color;
   padding: 16px;
+  z-index: 1040;
+  position: relative;
 
   .logo {
     margin-bottom: 16px;
@@ -77,5 +79,21 @@
         }
       }
     }
+  }
+}
+
+.offcanvas-backdrop-internal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0;
+}
+.show {
+  .offcanvas-backdrop-internal {
+    opacity: 0.5;
   }
 }

@@ -4,8 +4,6 @@ import { navVivo } from "utils/data";
 import { NavBarProps } from "types/component/NavBar";
 import Nav from "components/Nav";
 
-
-
 export default function NavBar({ isOpen }: NavBarProps) {
   return (
     <div

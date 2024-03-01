@@ -10,15 +10,12 @@ export default function Header() {
     setNavOpen(!isNavOpen);
   };
   return (
-    <div>
+    <div className={`${isNavOpen ? "show" : ""}`}>
       <div className="header shadow">
         <header>
           <button
             className={`button-menu navbar-toggler ${isNavOpen ? "show" : ""}`}
             type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasExample"
-            aria-controls="noffcanvasExample"
             aria-label="buttonMenuOpen"
             onClick={toggleNav}
             data-testid="toggle-button"
@@ -33,6 +30,7 @@ export default function Header() {
         </header>
       </div>
       <NavBar isOpen={isNavOpen} />
+      <div className="offcanvas-backdrop-internal"></div>
     </div>
   );
 }
