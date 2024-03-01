@@ -1,8 +1,10 @@
 import React from "react";
-import Nav from "components/Nav/Index";
-import { navVivo } from "utils/data";
 import "./navBar.scss";
+import { navVivo } from "utils/data";
 import { NavBarProps } from "types/component/NavBar";
+import Nav from "components/Nav";
+
+
 
 export default function NavBar({ isOpen }: NavBarProps) {
   return (

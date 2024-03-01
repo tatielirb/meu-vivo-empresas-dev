@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import NavBar from "components/NavBar/Index";
+import NavBar from "components/NavBar";
 
 describe("NavBar component", () => {
   test("shows component with class 'show' when isOpen is true", () => {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./header.scss";
 import logo from "../../assets/img/vivo-logo.svg";
-import NavBar from "components/NavBar/Index";
+import NavBar from "components/NavBar";
 
 export default function Header() {
   const [isNavOpen, setNavOpen] = useState(false);

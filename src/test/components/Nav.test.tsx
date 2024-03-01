@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import Nav from "components/Nav/Index";
+import Nav from "components/Nav";
 
 describe("Nav component", () => {
   test("renders the Nav component with menu items", () => {
