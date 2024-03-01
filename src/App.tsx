@@ -1,8 +1,8 @@
 import React from "react";
 import "App.scss";
-import Header from "components/Header/Index";
-import Card from "components/Card/";
-import Carousel from "components/Carousel/";
+import Header from "components/Header";
+import Card from "components/Card";
+import Carousel from "components/Carousel";
 import { carouselItems } from "utils/data";
 
 import { useApp } from "hooks/useApp";

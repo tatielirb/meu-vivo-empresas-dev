@@ -1,6 +1,6 @@
 import React from "react";
 import { render, fireEvent, screen } from "@testing-library/react";
-import Header from "components/Header/Index";
+import Header from "components/Header";
 
 describe("Header component", () => {
   test("renders Header component", () => {
