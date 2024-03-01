@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { fiveGcardItens, esimcardItens, simcardItens } from "utils/data";
+import { fiveGcardItems, esimcardItems, simcardItems } from "utils/data";
 
 export const useApp = () => {
   const [currentCarouselItem, setCurrentCarouselItem] = useState(0);
@@ -7,11 +7,11 @@ export const useApp = () => {
   const getCardList = () => {
     switch (currentCarouselItem) {
       case 0:
-        return fiveGcardItens;
+        return fiveGcardItems;
       case 1:
-        return esimcardItens;
+        return esimcardItems;
       case 2:
-        return simcardItens;
+        return simcardItems;
       default:
         return [];
     }

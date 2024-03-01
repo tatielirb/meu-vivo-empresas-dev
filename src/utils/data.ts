@@ -2,7 +2,7 @@ import simCardIcon from "../assets/img/simCard.svg";
 import esimIcon from "../assets/img/esim.svg";
 import fiveGIcon from "../assets/img/5g.svg";
 
-export const fiveGcardItens = [
+export const fiveGcardItems = [
   {
     title: "9GB",
     description: "8GB + 3GB bônus Fatura Digital",
@@ -19,7 +19,7 @@ export const fiveGcardItens = [
   },
 ];
 
-export const esimcardItens = [
+export const esimcardItems = [
   {
     title: "10GB",
     description: "8GB + 3GB bônus Digital",
@@ -36,7 +36,7 @@ export const esimcardItens = [
   },
 ];
 
-export const simcardItens = [
+export const simcardItems = [
   {
     title: "200 Mega",
     description: "+Wi-fi e Modem grátis",

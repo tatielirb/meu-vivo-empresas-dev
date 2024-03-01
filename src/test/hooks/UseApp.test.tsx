@@ -1,13 +1,13 @@
 import { renderHook, act } from "@testing-library/react";
 import { useApp } from "hooks/useApp";
-import { fiveGcardItens, esimcardItens } from "utils/data";
+import { fiveGcardItems, esimcardItems } from "utils/data";
 
 describe("useApp", () => {
   it("should start with app default values", () => {
     const { result } = renderHook(() => useApp());
 
     expect(result.current.currentCarouselItem).toBe(0);
-    expect(result.current.getCardList()).toEqual(fiveGcardItens);
+    expect(result.current.getCardList()).toEqual(fiveGcardItems);
   });
 
   it("should update currentCarouselItem and getCardList accordingly as action", () => {
@@ -19,6 +19,6 @@ describe("useApp", () => {
 
     expect(result.current.currentCarouselItem).toBe(1);
 
-    expect(result.current.getCardList()).toEqual(esimcardItens);
+    expect(result.current.getCardList()).toEqual(esimcardItems);
   });
 });
