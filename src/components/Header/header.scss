@@ -83,10 +83,10 @@
 }
 
 .offcanvas-backdrop-internal {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 0;
   width: 100vw;
   height: 100vh;
   background-color: #000;
@@ -95,5 +95,6 @@
 .show {
   .offcanvas-backdrop-internal {
     opacity: 0.5;
+    z-index: 2;
   }
 }
