@@ -1,18 +1,14 @@
-import React from "react";
 import "./companiesHome.scss";
-
 import Card from "components/Card";
 import Carousel from "components/Carousel";
 import { carouselItems } from "utils/data";
-
 import { useApp } from "hooks/useApp";
 
 export default function CompaniesHome() {
   const { setCurrentCarouselItem, getCardList } = useApp();
+
   return (
     <div className="companiesHome">
-    
-
       <div className="container mt-5">
         <div className="row ">
           <div className="col-12">

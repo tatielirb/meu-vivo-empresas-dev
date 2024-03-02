@@ -6,7 +6,7 @@ export const fiveGcardItems = [
   {
     title: "9GB",
     description: "8GB + 3GB bônus Fatura Digital",
-    badgeText: "O MELHOR CUSTO BENEFÍCIO"
+    badgeText: "O MELHOR CUSTO BENEFÍCIO",
   },
   {
     title: "19GB",
@@ -66,7 +66,6 @@ export const carouselItems = [
     title: "Tecnologia",
     iconItem: fiveGIcon,
   },
-  
 ];
 
 export const navVivo = [

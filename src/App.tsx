@@ -13,7 +13,6 @@ export default function App() {
           <Route path="/" Component={CompaniesHome} />
         </Routes>
       </Router>
-      ;
     </div>
   );
 }

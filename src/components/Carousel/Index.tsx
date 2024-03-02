@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./carousel.scss";
 import { ItemsCarousel } from "types/component/Carousel";
 import Item from "./Item";
@@ -17,11 +17,13 @@ export default function Carousel({ items, onCarouselChange }: ItemsCarousel) {
     const newIndex = (currentItem + 1) % items.length;
     itemClick(newIndex);
   };
+  
 
   const buttonPrev = () => {
     const newIndex = (currentItem - 1 + items.length) % items.length;
     itemClick(newIndex);
   };
+  
 
   return (
     <div className="carousel-container">

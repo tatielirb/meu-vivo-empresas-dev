@@ -6,12 +6,12 @@
 
   .carousel {
     display: flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
   }
 
   .carousel-items {
-    background: $primary-color ;
+    background: $primary-color;
     opacity: 33%;
     width: 70px !important;
     height: 80px;
@@ -26,7 +26,6 @@
       transform: scale(1.2);
       width: 122px !important;
       height: 150px;
-      background: $primary-color;
       opacity: 100%;
 
       p {

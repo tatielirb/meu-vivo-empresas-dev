@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./header.scss";
 import logo from "../../assets/img/vivo-logo.svg";
 import NavBar from "components/NavBar";

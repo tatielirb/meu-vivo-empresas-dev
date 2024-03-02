@@ -1,4 +1,3 @@
-import React from "react";
 import "./navBar.scss";
 import { navVivo } from "utils/data";
 import { NavBarProps } from "types/component/NavBar";

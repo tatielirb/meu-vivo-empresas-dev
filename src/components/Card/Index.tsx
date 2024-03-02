@@ -1,4 +1,3 @@
-import React from "react";
 import wifi from "../../assets/img/wifi.svg";
 import "./card.scss";
 import { CardProps } from "types/component/Card";

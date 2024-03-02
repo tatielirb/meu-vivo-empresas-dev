@@ -1,4 +1,3 @@
-import React from "react";
 import MenuItem from "./MenuItem";
 import "./nav.scss";
 import { NavProps } from "types/component/Nav";

@@ -3,14 +3,19 @@ import { fiveGcardItems, esimcardItems, simcardItems } from "utils/data";
 
 export const useApp = () => {
   const [currentCarouselItem, setCurrentCarouselItem] = useState(0);
+  const CAROUSEL_ITEMS = {
+    FIVE_G: 0,
+    ESIM: 1,
+    SIM: 2,
+  };
 
   const getCardList = () => {
     switch (currentCarouselItem) {
-      case 0:
+      case CAROUSEL_ITEMS.FIVE_G:
         return fiveGcardItems;
-      case 1:
+      case CAROUSEL_ITEMS.ESIM:
         return esimcardItems;
-      case 2:
+      case CAROUSEL_ITEMS.SIM:
         return simcardItems;
       default:
         return [];
