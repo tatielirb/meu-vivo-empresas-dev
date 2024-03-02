@@ -1,7 +1,5 @@
-import React from "react";
 import Header from "components/Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import CompaniesHome from "pages/companies/CompaniesHome";
 
 export default function App() {
